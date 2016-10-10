@@ -1,0 +1,16 @@
+vars_dirs:
+   - { name: global, uid: 0, gid: 0, state: directory, mode: '0755' }
+   - { name: global/ansible, uid: 1000, gid: 1000, state: directory, mode: '0700' }
+   - { name: global/app, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/bin, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/certs, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/status, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/status/ref, uid: 2000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/status/test, uid: 3000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/status/int, uid: 4000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/etc/status/prodadm, uid: 5000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/install, uid: 1000, gid: 1000, state: directory, mode: '0700' }
+   - { name: global/install/apache-2.2, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/lib, uid: 1000, gid: 1000, state: directory, mode: '0750' }
+   - { name: global/webadm, uid: 1000, gid: 1000, state: directory, mode: '0700' }

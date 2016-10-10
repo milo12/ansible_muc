@@ -1,0 +1,17 @@
+pers_users:
+   - {name: baeckerviell, uid: 6001, gid: 1111, state: present}
+   - {name: falke, uid: 6002, gid: 1111, state: present}
+   - {name: krusenotto, uid: 6003, gid: 1111, state: present}
+   - {name: nordmann, uid: 6004, gid: 1111, state: present}
+   - {name: rebelo, uid: 6005, gid: 1111, state: present}
+   - {name: wigge, uid: 6006, gid: 1111, state: present}
+   - {name: wilhelm, uid: 6007, gid: 1111, state: present}
+   - {name: brauchle, uid: 6101, gid: 1111, state: present}
+   - {name: heldwein, uid: 6102, gid: 1111, state: present}
+   - {name: kaiser, uid: 6103, gid: 1111, state: present}
+   - {name: koziel, uid: 6104, gid: 1111, state: present}
+   - {name: lohmann, uid: 6105, gid: 1111, state: present}
+   - {name: maier, uid: 6106, gid: 1111, state: present}
+   - {name: masslow, uid: 6107, gid: 1111, state: present}
+   - {name: sliwinski-clausner, uid: 6108, gid: 1111, state: present}
+

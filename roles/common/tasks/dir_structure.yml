@@ -1,0 +1,31 @@
+# dir_structure.yml
+# 07.09.2016
+# Michael Lohmann
+#
+#
+
+- name: add several global dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ svn_dirs }}"
+
+- name: add several db dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ db_dirs }}"
+
+- name: add several ci dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ ci_dirs }}"
+
+- name: add several jboss dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ jboss_dirs }}"
+
+- name: add several apm dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ apm_dirs }}"
+
+- name: add several exchange dirs
+  file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
+  with_items: "{{ exchange_dirs }}"
+
+

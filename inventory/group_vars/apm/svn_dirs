@@ -1,0 +1,20 @@
+svn_dirs:
+   - { name: svn, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: svn/global/app/subversion-1.9.4, uid: jccsvn, gid: wwwuser, state: directory, mode: '0750' }
+   - { name: svn/global/etc/platformrc, uid: jccsvn, gid: wwwuser, state: directory, mode: '0750' }
+   - { name: svn/test/etc/envrc, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/etc/apache_proxy, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/etc/logrotate, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/etc/upgrade, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/etc/watchdog, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/global/repositories, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/var/backup, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/var/install, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/var/watchdog, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/test1/apache_svn, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/test/test1/log, uid: testadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/int/etc/envrc, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/int/global/repositories, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/int/int1, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/prod/global/repositories, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: svn/prod/prod1, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }

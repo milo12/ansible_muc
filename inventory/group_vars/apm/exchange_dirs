@@ -1,0 +1,53 @@
+exchange_dirs:
+   - { name: exchange, uid: 0, gid: 0, state: directory, mode: '0755' }
+   - { name: exchange/global, uid: root, gid: root, state: directory, mode: '0750' } # user tbd
+   - { name: exchange/ref/homes, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/ref/homes/epa, uid: epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/ref/homes/d_epa, uid: d_epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/ref/transfer, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/ref/transfer/epa/bin, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/ref/transfer/epa/data, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/ref/transfer/epa/data/inbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/ref/transfer/epa/data/outbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/ref/transfer/epa/etc, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/ref/transfer/epa/install, uid: testadm, gid: epa, state: directory, mode: '0770' }
+   - { name: exchange/ref/transfer/epa/log, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/ref/transfer/epa/var, uid: testadm, gid: w_epa, state: directory, mode: '0770' }
+   - { name: exchange/test/homes, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/test/homes/epa, uid: epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/test/homes/d_epa, uid: d_epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/test/transfer, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/test/transfer/epa/bin, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/test/transfer/epa/data, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/test/transfer/epa/data/inbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/test/transfer/epa/data/outbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/test/transfer/epa/etc, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/test/transfer/epa/install, uid: testadm, gid: epa, state: directory, mode: '0770' }
+   - { name: exchange/test/transfer/epa/log, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/test/transfer/epa/var, uid: testadm, gid: w_epa, state: directory, mode: '0770' }
+   - { name: exchange/int/homes, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/int/homes/epa, uid: epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/int/homes/d_epa, uid: d_epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/int/transfer, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/int/transfer/epa/bin, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/int/transfer/epa/data, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/int/transfer/epa/data/inbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/int/transfer/epa/data/outbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/int/transfer/epa/etc, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/int/transfer/epa/install, uid: testadm, gid: epa, state: directory, mode: '0770' }
+   - { name: exchange/int/transfer/epa/log, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/int/transfer/epa/var, uid: testadm, gid: w_epa, state: directory, mode: '0770' }
+
+   - { name: exchange/prod/homes, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/prod/homes/epa, uid: epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/prod/homes/d_epa, uid: d_epa, gid: epa, state: directory, mode: '0700' }
+   - { name: exchange/prod/transfer, uid: root, gid: root, state: directory, mode: '0755' }
+   - { name: exchange/prod/transfer/epa/bin, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/prod/transfer/epa/data, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/prod/transfer/epa/data/inbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/prod/transfer/epa/data/outbound, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/prod/transfer/epa/etc, uid: testadm, gid: epa, state: directory, mode: '0750' }
+   - { name: exchange/prod/transfer/epa/install, uid: testadm, gid: epa, state: directory, mode: '0770' }
+   - { name: exchange/prod/transfer/epa/log, uid: testadm, gid: w_epa, state: directory, mode: '0775' }
+   - { name: exchange/prod/transfer/epa/var, uid: testadm, gid: w_epa, state: directory, mode: '0770' }
+

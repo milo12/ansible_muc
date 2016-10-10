@@ -1,0 +1,35 @@
+ci_dirs:
+   - { name: ci, uid: 0, gid: 0, state: directory, mode: '0755' }
+   - { name: ci/global/ansible, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/app/apache-ant-1.8.4, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/app/apache-ant-1.9.6, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/app/apache-maven-3.0.4, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/app/apache-maven-3.1.1, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/app/apache-maven-3.1.2, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/global/etc/platformrc, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/test, uid: jccci, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/ansible, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/app, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/bin, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/etc/envrc, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/etc/apache_proxy, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/etc/apache_proxy, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/apache_getaccess, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/jenkins, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/nexus, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/sonar, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/sonar-runner, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/int1/JBoss6-E, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/int/var, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+
+   - { name: ci/prod/ansible, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/bin, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/etc/envrc, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/etc/apache_proxy, uid: prodadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/apache_getaccess, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/jenkins, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/nexus, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/sonar, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/sonar-runner, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/prod1/JBoss6-E, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }
+   - { name: ci/prod/var, uid: intadm, gid: wwwuser, state: directory, mode: '0700' }

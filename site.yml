@@ -1,0 +1,12 @@
+# Master Playbook
+# In this playbook all hosts and their corresponding roles are defined
+# 07.09.2016
+#
+-  hosts: all
+   roles:
+     - common
+#     - apm
+#   become: true
+
+  #- include: user_open.yaml
+
