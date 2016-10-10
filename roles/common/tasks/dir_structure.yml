@@ -2,7 +2,6 @@
 # 07.09.2016
 # Michael Lohmann
 #
-#
 
 - name: add several global dirs
   file: name=/server/hrs/{{ item.name }} state={{ item.state }} owner={{ item.uid }} group={{ item.gid }} mode={{ item.mode }}
